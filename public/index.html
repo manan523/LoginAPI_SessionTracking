@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatFusion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=PT+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="description">
+            <h1>Welcome! You are logged in!<br>
+        </div>
+        <div class="login">
+            <button class="btn activity">Activity</button>
+            <button class="btn" onclick="logout()">Logout</button>
+            <br><br><br><br><br>
+            <h2>Session Time: </h2>
+            <p id="demo"></p>
+        </div>
+
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="index.js" charset="UTF-8"></script>
+    <script>
+        function logout(){
+            window.location.href="/logout";
+        }
+    </script>
+</body>
+
+</html>
